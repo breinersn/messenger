@@ -8,9 +8,20 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<body>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the
-    <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-</ion-content>
+<ng-container *ngFor="let user of friends; let i = index">
+   <p *ngIf="user.friend">
+  <b>Amigos</b><br>
+  {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
+   </p>
+</ng-container>
+
+<ng-container *ngFor="let user of friends; let i = index">
+    <p *ngIf="!user.friend">
+   <b>no Amigos</b><br>
+   {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
+    </p>
+ </ng-container>
+
+</body>

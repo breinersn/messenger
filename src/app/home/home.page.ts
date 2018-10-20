@@ -8,7 +8,7 @@ import { User } from '../interfaces/user';
 })
 export class HomePage {
 
-  friends: User[] = [];
+  friends: User[];
 
   constructor() {
     const usuario1: User = {
@@ -32,7 +32,7 @@ export class HomePage {
       subNick: 'beto',
       age: 25,
       email: 'fwwe@hotmail.com',
-      friend: true,
+      friend: false,
       uid: 3
     };
     const usuario4: User = {
@@ -48,7 +48,7 @@ export class HomePage {
       subNick: 'menu',
       age: 25,
       email: 'jhkh@hotmail.com',
-      friend: true,
+      friend: false,
       uid: 5
     };
     this.friends = [usuario1, usuario2, usuario3, usuario4, usuario5];
