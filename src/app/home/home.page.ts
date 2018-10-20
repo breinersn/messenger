@@ -15,39 +15,39 @@ export class HomePage {
       nick: 'breiner',
       subNick: 'suarezn',
       age: 25,
-      email: 'wando08@hotmail.com',
+      email: 'wando@hotmail.com',
       friend: true,
       uid: 1
     };
     const usuario2: User = {
-      nick: 'breiner',
-      subNick: 'suarezn',
-      age: 25,
-      email: 'wando08@hotmail.com',
+      nick: 'henrry',
+      subNick: 'cocolizo',
+      age: 18,
+      email: 'kbask@hotmail.com',
       friend: true,
       uid: 2
     };
     const usuario3: User = {
-      nick: 'breiner',
-      subNick: 'suarezn',
+      nick: 'alfredo',
+      subNick: 'beto',
       age: 25,
-      email: 'wando08@hotmail.com',
+      email: 'fwwe@hotmail.com',
       friend: true,
       uid: 3
     };
     const usuario4: User = {
-      nick: 'breiner',
-      subNick: 'suarezn',
+      nick: 'manuel',
+      subNick: 'mañe',
       age: 25,
-      email: 'wando08@hotmail.com',
+      email: 'fgdf@hotmail.com',
       friend: true,
       uid: 4
     };
     const usuario5: User = {
-      nick: 'breiner',
-      subNick: 'suarezn',
+      nick: 'andres',
+      subNick: 'menu',
       age: 25,
-      email: 'wando08@hotmail.com',
+      email: 'jhkh@hotmail.com',
       friend: true,
       uid: 5
     };
