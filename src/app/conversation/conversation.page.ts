@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-conversation',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConversationPage implements OnInit {
 
-  constructor() { }
+  friends: any;
+  constructor(private activateRoute: ActivatedRoute) {
+    this.friends = this.activateRoute.snapshot.params['uid'];
+    console.log(this.friends);
+  }
 
   ngOnInit() {
   }

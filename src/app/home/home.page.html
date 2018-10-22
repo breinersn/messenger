@@ -11,17 +11,21 @@
 <body>
 
 <ng-container *ngFor="let user of friends; let i = index">
-   <p *ngIf="user.friend">
-  <b>Amigos</b><br>
+  <div *ngIf="user.friend">
+      <b>Amigos</b><br>
+   <a routerLink="/conversation/{{user.uid}}">
   {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
-   </p>
+   </a>
+  </div>
 </ng-container>
 
 <ng-container *ngFor="let user of friends; let i = index">
-    <p *ngIf="!user.friend">
-   <b>no Amigos</b><br>
-   {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
-    </p>
- </ng-container>
+    <div *ngIf="!user.friend">
+        <b>no Amigos</b><br>
+     <a routerLink="/conversation/{{user.uid}}">
+    {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
+     </a>
+    </div>
+  </ng-container>
 
 </body>
