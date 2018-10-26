@@ -1,7 +1,8 @@
 import { User } from './../interfaces/user';
 import { UserService } from './../services/user.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 
 
 @Component({
@@ -19,7 +20,7 @@ export class ConversationPage implements OnInit {
     console.log(this.friendId);
     this.friends = this.userService.getFriends();
     this.friend = this.friends.find((record) => {
-      return record.uid === this.friendId;
+      return record.uid = this.friendId;
     });
     console.log(this.friend);
   }
