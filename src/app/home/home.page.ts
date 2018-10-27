@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 export class HomePage {
 
   friends: User[];
+  query: any = '';
   constructor(private userService: UserService) {
 
     this.friends = this.userService.getFriends();

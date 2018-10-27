@@ -10,22 +10,15 @@
 </ion-header>
 <body>
 
-<ng-container *ngFor="let user of friends; let i = index">
-  <div *ngIf="user.friend">
-      <b>Amigos</b><br>
+<input type="text" placeholder="buscar amigos" [(ngModel)]="query"/> 
+ <br>
+  <b>Amigos</b><br>
+<ng-container *ngFor="let user of friends | search: query;  let i = index">
+  <div>
    <a routerLink="/conversation/{{user.uid}}">
   {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
    </a>
   </div>
 </ng-container>
-
-<ng-container *ngFor="let user of friends; let i = index">
-    <div *ngIf="!user.friend">
-        <b>no Amigos</b><br>
-     <a routerLink="/conversation/{{user.uid}}">
-    {{i}} {{user.nick}} - {{user.uid}} - {{user.email}}
-     </a>
-    </div>
-  </ng-container>
 
 </body>
